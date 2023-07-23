@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Sites - Adiyogi Shiva Statue</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        --primary-bg-color: #050404;
+        --primary-text-color: #fffcf2;
+        --secondary-bg-color: #168aadff;
+        --secondary-text-color: #080708;
+        --accent-color: #80ed99;
+        --heading-font-family: "Space Grotesk", sans-serif;
+
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+        font-family: "Inter", sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--heading-font-family);
+        color: var(--primary-text-color);
+      }
+
+      .bg-primary {
+        background-color: var(--secondary-bg-color);
+      }
+
+      .bg-secondary {
+        background-color: var(--primary-bg-color);
+      }
+
+      .text-primary {
+        color: var(--secondary-text-color);
+      }
+
+      .text-secondary {
+        color: var(--secondary-text-color);
+      }
+
+      .btn {
+        background-color: var(--accent-color);
+        color: var(--secondary-text-color);
+        border-radius: 9999px;
+        padding: 12px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .btn:hover {
+        background-color: #8eecf5;
+        transform: scale(1.05);
+      }
+
+      .footer {
+        background-color: var(--secondary-bg-color);
+        margin-top: auto;
+        padding: 1rem;
+        text-align: center;
+        color: var(--secondary-text-color);
+      }
+
+      .main-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        transition: transform 0.3s ease;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .main-image:hover {
+        transform: scale(1.1);
+      }
+
+      .content-container {
+        background: linear-gradient(
+          135deg,
+          var(--platinum),
+          var(--alabaster),
+          var(--saffron),
+          var(--eerie-black),
+          var(--jet)
+        );
+        background-size: 1800% 1800%;
+        padding: 2rem;
+        border: 2px solid var(--alabaster);
+        border-radius: 8px;
+        animation: gradientAnimation 18s linear infinite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="wrapper"
+      style="display: flex; flex-direction: column; min-height: 100vh"
+    >
+      <header class="py-8 px-4 text-center">
+        <h1 class="text-4xl font-bold">India Tourism</h1>
+      </header>
+      <nav class="p-4 m-4 bg-secondary text-primary text-center">
+        <a href="../index.html" class="btn mx-2 my-2 block md:inline-block">Home</a>
+        <a href="../heritage.html" class="btn mx-2 my-2 block md:inline-block">Heritage</a>
+        <a href="../hotel_booking.html" class="btn mx-2 my-2 block md:inline-block">Hotel Booking</a>
+        <a href="../gallery.html" class="btn mx-2 my-2 block md:inline-block">Gallery</a>
+      </nav>
+
+      <main class="p-8 flex-1">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <!-- Large image of the Adiyogi Shiva Statue on the left -->
+              <img
+                src="https://images.unsplash.com/photo-1663349405587-13512e1c4c2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGFkaXlvZ2klMjBzdGF0dWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Adiyogi Shiva Statue"
+                class="main-image mx-auto md:ml-0 cursor-pointer"
+              />
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold mb-4">Adiyogi Shiva Statue</h2>
+              <p class="text-lg mb-6">
+                The Adiyogi Shiva Statue is a 112-foot-tall statue located at
+                the Isha Yoga Center in Coimbatore, Tamil Nadu, India. It is
+                dedicated to Lord Shiva, who is considered the first yogi or
+                Adiyogi in the yogic tradition. The majestic statue stands as a
+                symbol of yoga, meditation, and inner transformation.
+              </p>
+              <p class="text-lg mb-6">
+                The Adiyogi Shiva Statue was consecrated by Sadhguru Jaggi
+                Vasudev, a renowned spiritual leader and founder of the Isha
+                Foundation. It was unveiled on Mahashivaratri in 2017 and has
+                since become a significant pilgrimage site for spiritual
+                seekers and yoga enthusiasts from around the world.
+              </p>
+              <p class="text-lg mb-6">
+                The unique architecture of the statue depicts Lord Shiva in his
+                meditative posture, surrounded by the seven chakras, representing
+                the seven dimensions of human consciousness. The serene and
+                tranquil ambiance of the Isha Yoga Center complements the
+                spiritual experience of visitors.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Adiyogi_Shiva_statue"
+                class="btn mx-auto md:ml-0 mt-4 md:mt-0 inline-block"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="py-4 px-8 footer" style="margin-top: auto">
+        &copy; 2023 India Tourism
+      </footer>
+    </div>
+  </body>
+</html>

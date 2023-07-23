@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Sites - Nahargarh Fort Wall</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        --primary-bg-color: #050404;
+        --primary-text-color: #fffcf2;
+        --secondary-bg-color: #168aadff;
+        --secondary-text-color: #080708;
+        --accent-color: #80ed99;
+        --heading-font-family: "Space Grotesk", sans-serif;
+
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+        font-family: "Inter", sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--heading-font-family);
+        color: var(--primary-text-color);
+      }
+
+      .bg-primary {
+        background-color: var(--secondary-bg-color);
+      }
+
+      .bg-secondary {
+        background-color: var(--primary-bg-color);
+      }
+
+      .text-primary {
+        color: var(--secondary-text-color);
+      }
+
+      .text-secondary {
+        color: var(--secondary-text-color);
+      }
+
+      .btn {
+        background-color: var(--accent-color);
+        color: var(--secondary-text-color);
+        border-radius: 9999px;
+        padding: 12px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .btn:hover {
+        background-color: #8eecf5;
+        transform: scale(1.05);
+      }
+
+      .footer {
+        background-color: var(--secondary-bg-color);
+        margin-top: auto;
+        padding: 1rem;
+        text-align: center;
+        color: var(--secondary-text-color);
+      }
+
+      .main-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        transition: transform 0.3s ease;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .main-image:hover {
+        transform: scale(1.1);
+      }
+
+      .content-container {
+        background-size: 1800% 1800%;
+        padding: 2rem;
+        border: 2px solid var(--alabaster);
+        border-radius: 8px;
+        animation: gradientAnimation 18s linear infinite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="wrapper"
+      style="display: flex; flex-direction: column; min-height: 100vh"
+    >
+      <header class="py-8 px-4 text-center">
+        <h1 class="text-4xl font-bold">India Tourism</h1>
+      </header>
+      <nav class="p-4 m-4 bg-secondary text-primary text-center">
+        <a href="../index.html" class="btn mx-2 my-2 block md:inline-block">Home</a>
+        <a href="../heritage.html" class="btn mx-2 my-2 block md:inline-block">Heritage</a>
+        <a href="../hotel_booking.html" class="btn mx-2 my-2 block md:inline-block">Hotel Booking</a>
+        <a href="../gallery.html" class="btn mx-2 my-2 block md:inline-block">Gallery</a>
+      </nav>
+      <main class="p-8 flex-1">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-4">Nahargarh Fort Wall</h2>
+              <p class="text-lg mb-6">
+                The Nahargarh Fort Wall is a historic defensive wall located on
+                the rugged Aravalli Hills in Jaipur, Rajasthan, India. It was
+                constructed during the 18th century as a part of the Nahargarh
+                Fort complex, which was built to protect the city of Jaipur from
+                potential attacks. The fort and its walls offer a magnificent
+                panoramic view of Jaipur city.
+              </p>
+              <p class="text-lg mb-6">
+                The Nahargarh Fort Wall stretches across the hills and
+                intertwines with the natural landscape. The wall's architecture
+                showcases the engineering brilliance of the time, with its
+                thick, imposing structure providing a sense of security and
+                grandeur. Visitors can explore the wall and enjoy the serene
+                beauty of the surrounding hills and the city below.
+              </p>
+              <p class="text-lg mb-6">
+                The Nahargarh Fort and its wall have become popular tourist
+                attractions, and they also hold historical significance in the
+                region. The fort's name "Nahargarh" translates to "abode of
+                tigers," and it is believed to be haunted by the spirit of a
+                restless soul, giving rise to several fascinating legends and
+                stories.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Nahargarh_Fort"
+                class="btn mx-auto md:ml-0 mt-4 md:mt-0 inline-block"
+              >
+                Learn More
+              </a>
+            </div>
+            <div>
+              <!-- Large image of Nahargarh Fort Wall on the right -->
+              <img
+                src="https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="Nahargarh Fort Wall"
+                class="main-image mx-auto md:ml-0 cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="py-4 px-8 footer" style="margin-top: auto">
+        &copy; 2023 India Tourism
+      </footer>
+    </div>
+  </body>
+</html>
